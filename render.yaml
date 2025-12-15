@@ -1,0 +1,10 @@
+services:
+- type: web
+  name: nokos-bot-jual
+  env: python
+  buildCommand: pip install -r requirements.txt
+  startCommand: python main.py
+  plan: free
+  envVars:
+  - key: BOT_TOKEN
+    value: 8438859549:AAHqvswDSc3jHBUtBspH1IjhhXo4ZwVkBT4
